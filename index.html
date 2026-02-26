@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jihane Benzerkane — AI & Digital Transformation Student</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- CURSOR GLOW -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- PARTICLES BACKGROUND -->
+    <div class="particles" id="particles"></div>
+
+    <!-- LOADING SCREEN -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-year">2025</div>
+            <div class="loader-text">PORTFOLIO</div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-logo">
+            <span class="logo-dot"></span>
+            <span class="logo-text">JB</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link active" data-text="Home">Home</a></li>
+            <li><a href="#about" class="nav-link" data-text="About">About</a></li>
+            <li><a href="#work" class="nav-link" data-text="Work">Work</a></li>
+            <li><a href="#skills" class="nav-link" data-text="Skills">Skills</a></li>
+            <li><a href="#contact" class="nav-link" data-text="Contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="resume.html" class="nav-resume">
+                <span>Resume</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#work" class="mobile-link">Work</a>
+            <a href="#skills" class="mobile-link">Skills</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════ -->
+    <!-- HERO SECTION -->
+    <!-- ═══════════════════════════════════ -->
+    <section id="home" class="hero">
+        <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>Available for work</span>
+        </div>
+
+        <div class="hero-title-wrapper">
+            <h1 class="hero-title">
+                <span class="title-line line-1">
+                    <span class="title-word">AI</span>
+                    <span class="title-word">&</span>
+                    <span class="title-word">Digital</span>
+                </span>
+                <span class="title-line line-2">
+                    <span class="title-word">Transformation</span>
+                </span>
+                <span class="title-line line-3"
+                    style="font-size: 0.5em; opacity: 0.8; margin-top: 20px; display: block;">
+                    <span class="glow-word" id="rotatingWord">
+                        <span class="glow-bracket">[</span>
+                        <span class="glow-text">AI Engineer</span>
+                        <span class="glow-bracket">]</span>
+                    </span>
+                </span>
+            </h1>
+        </div>
+
+        <div class="hero-bottom">
+            <div class="hero-info">
+                <p class="hero-description">
+                    I'm a Third-year engineering student at <em>ENSA Al Hoceima</em>.
+                    I love building things — from ML models and REST APIs to full-stack apps.
+                </p>
+            </div>
+            <div class="hero-cta">
+                <a href="#work" class="btn-glass">
+                    <span>Explore my work</span>
+                    <div class="btn-shine"></div>
+                </a>
+            </div>
+            <div class="hero-scroll">
+                <div class="scroll-line"></div>
+                <span>Scroll</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════ -->
+    <!-- ABOUT SECTION -->
+    <!-- ═══════════════════════════════════ -->
+    <section id="about" class="about">
+        <div class="section-label">
+            <span class="label-number">01</span>
+            <span class="label-line"></span>
+            <span class="label-text">About</span>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-image-wrapper">
+                <div class="about-image-frame">
+                    <img src="your-photo.jpg" alt="Your Name" class="about-image">
+                    <div class="image-overlay"></div>
+                    <div class="image-grain"></div>
+                </div>
+                <div class="about-image-label">
+                    <span class="label-tag">/// PORTRAIT</span>
+                    <span class="label-year">2025</span>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <h2 class="about-heading">
+                    <span class="heading-small">Hey, I'm</span>
+                    <span class="heading-name">Jihane Benzerkane</span>
+                </h2>
+
+                <div class="about-bio">
+                    <p class="bio-large">
+                        <span class="highlight">AI & Digital Transformation</span> Engineering Student.
+                    </p>
+                    <p class="bio-text">
+                        I'm a Third-year engineering student at ENSA Al Hoceima, Morocco.
+                        My goal is to bridge the gap between theoretical AI research and practical, production-ready
+                        systems.
+                        I learn fast, contribute actively to open-source, and I'm always looking for meaningful problems
+                        to solve.
+                    </p>
+                    <p class="bio-text" style="margin-top: 15px; font-style: italic; opacity: 0.9;">
+                        Beyond the screen, I find myself at ease <span class="highlight">reading</span>, <span
+                            class="highlight">swimming</span>, and <span class="highlight">contemplating</span> — I
+                        believe true value comes from a balanced and ambitious mind.
+                    </p>
+                </div>
+
+                <div class="about-stats">
+                    <div class="stat-card glass-card">
+                        <div class="stat-number" data-count="15">0</div>
+                        <div class="stat-label">GitHub<br>Repos</div>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <div class="stat-number" data-count="3">0</div>
+                        <div class="stat-label">Year of<br>Study</div>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <div class="stat-number" data-count="98">0</div>
+                        <div class="stat-label">Ambition<br>Level %</div>
+                    </div>
+
+                    <div class="about-education glass-card" style="margin-top: 30px; padding: 25px;">
+                        <h4 style="margin-bottom: 20px; font-family: 'Space Grotesk', sans-serif; letter-spacing: 1px;">
+                            EDUCATION</h4>
+                        <div class="edu-item"
+                            style="margin-bottom: 20px; border-left: 2px solid var(--accent); padding-left: 20px;">
+                            <span style="display: block; font-weight: bold; color: var(--accent);">2023 — Present</span>
+                            <span style="display: block; font-size: 1.1em; font-weight: bold;">Engineering Degree in AI
+                                & Digital Transformation</span>
+                            <span style="display: block; opacity: 0.8;">ENSA Al Hoceima, Morocco</span>
+                            <p style="font-size: 0.9em; margin-top: 8px;">Core modules: Machine Learning, Deep Learning,
+                                Software Engineering, Databases, Networks, and Digital Transformation strategies.</p>
+                        </div>
+                        <div class="edu-item" style="border-left: 2px solid rgba(255,255,255,0.2); padding-left: 20px;">
+                            <span style="display: block; font-weight: bold; opacity: 0.6;">2022 — 2023</span>
+                            <span style="display: block; font-size: 1.1em; font-weight: bold;">Baccalaureate in Sciences
+                                Mathématiques</span>
+                            <span style="display: block; opacity: 0.8;">Mention Bien — Lycée, Morocco</span>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="resume.pdf" class="btn-outline" download>
+                    <i class="fas fa-download"></i>
+                    <span>Download CV</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════ -->
+    <!-- WORK / PROJECTS SECTION -->
+    <!-- ═══════════════════════════════════ -->
+    <section id="work" class="work">
+        <div class="section-label">
+            <span class="label-number">02</span>
+            <span class="label-line"></span>
+            <span class="label-text">Selected Work</span>
+        </div>
+
+        <div class="work-header">
+            <h2 class="work-title">
+                Featured<br>
+                <em>Projects</em>
+            </h2>
+            <p class="work-subtitle">A curated selection of my recent work</p>
+        </div>
+
+        <div class="projects-container">
+
+            <!-- PROJECT 1: AI Sentiment Analyzer -->
+            <div class="project-item" data-project="01">
+                <div class="project-image-wrapper">
+                    <div class="project-number">01</div>
+                    <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=2070&auto=format&fit=crop"
+                        alt="AI Sentiment Analyzer" class="project-image">
+                    <div class="project-image-overlay"></div>
+                    <div class="project-links-overlay">
+                        <a href="https://github.com/jihanebenzerkane/Sentiment-Analysis-BERT" class="project-link-btn"
+                            target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>Code</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <div class="project-meta">
+                        <span class="project-category">AI / NLP</span>
+                        <span class="project-year">2024</span>
+                    </div>
+                    <h3 class="project-name">AI Sentiment Analyzer</h3>
+                    <p class="project-desc">
+                        Multi-class sentiment analysis pipeline (Positive, Neutral, Negative) built with BERT
+                        transformers and exposed as a production-ready REST API.
+                    </p>
+                    <div class="project-stack">
+                        <span class="stack-tag">BERT</span>
+                        <span class="stack-tag">FastAPI</span>
+                        <span class="stack-tag">HuggingFace</span>
+                        <span class="stack-tag">Python</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 2: JobTracker -->
+            <div class="project-item reverse" data-project="02">
+                <div class="project-image-wrapper">
+                    <div class="project-number">02</div>
+                    <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?q=80&w=2070&auto=format&fit=crop"
+                        alt="JobTracker" class="project-image">
+                    <div class="project-image-overlay"></div>
+                    <div class="project-links-overlay">
+                        <a href="https://github.com/jihanebenzerkane/backend-API-job-Tracker" class="project-link-btn"
+                            target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>Code</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <div class="project-meta">
+                        <span class="project-category">Full Stack</span>
+                        <span class="project-year">2024</span>
+                    </div>
+                    <h3 class="project-name">JobTracker API</h3>
+                    <p class="project-desc">
+                        Robust management system for job applications featuring role-based auth, CV uploads, and
+                        specialized dashboard analytics.
+                    </p>
+                    <div class="project-stack">
+                        <span class="stack-tag">Django</span>
+                        <span class="stack-tag">PostgreSQL</span>
+                        <span class="stack-tag">Bootstrap</span>
+                        <span class="stack-tag">Python</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 3: DFA Compiler -->
+            <div class="project-item" data-project="03">
+                <div class="project-image-wrapper">
+                    <div class="project-number">03</div>
+                    <img src="https://images.unsplash.com/photo-1516116216624-53e697fedbea?q=80&w=2128&auto=format&fit=crop"
+                        alt="DFA Compiler" class="project-image">
+                    <div class="project-image-overlay"></div>
+                    <div class="project-links-overlay">
+                        <a href="https://github.com/jihanebenzerkane/Projet-Theorie-de-langage" class="project-link-btn"
+                            target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>Code</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <div class="project-meta">
+                        <span class="project-category">System Program</span>
+                        <span class="project-year">2023</span>
+                    </div>
+                    <h3 class="project-name">DFA Compiler</h3>
+                    <p class="project-desc">
+                        A custom language compiler based on Deterministic Finite Automata, implementing lexical/syntax
+                        analysis and AST traversal.
+                    </p>
+                    <div class="project-stack">
+                        <span class="stack-tag">C</span>
+                        <span class="stack-tag">Flex</span>
+                        <span class="stack-tag">Bison</span>
+                        <span class="stack-tag">Theory</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════ -->
+    <!-- SKILLS SECTION -->
+    <!-- ═══════════════════════════════════ -->
+    <section id="skills" class="skills">
+        <div class="section-label">
+            <span class="label-number">03</span>
+            <span class="label-line"></span>
+            <span class="label-text">Expertise</span>
+        </div>
+
+        <div class="skills-layout">
+            <div class="skills-header">
+                <h2 class="skills-title">
+                    Tools & <br><em>Technologies</em>
+                </h2>
+                <p class="skills-desc">
+                    My arsenal of technologies I use to bring ideas to life
+                </p>
+            </div>
+
+            <div class="skills-orbit">
+                <div class="orbit-center">
+                    <span class="orbit-text">STACK</span>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-item glass-card" data-skill="95">
+                        <div class="skill-icon"><i class="fab fa-python"></i></div>
+                        <div class="skill-info">
+                            <h4>Python (AI/ML)</h4>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--fill: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item glass-card" data-skill="90">
+                        <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                        <div class="skill-info">
+                            <h4>Deep Learning</h4>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--fill: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item glass-card" data-skill="88">
+                        <div class="skill-icon"><i class="fas fa-microchip"></i></div>
+                        <div class="skill-info">
+                            <h4>FastAPI / Django</h4>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--fill: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item glass-card" data-skill="92">
+                        <div class="skill-icon"><i class="fas fa-code"></i></div>
+                        <div class="skill-info">
+                            <h4>C / C++</h4>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--fill: 92%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item glass-card" data-skill="85">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <div class="skill-info">
+                            <h4>PostgreSQL</h4>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--fill: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item glass-card" data-skill="80">
+                        <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
+                        <div class="skill-info">
+                            <h4>Networks</h4>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--fill: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item glass-card" data-skill="87">
+                        <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                        <div class="skill-info">
+                            <h4>Git</h4>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--fill: 87%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item glass-card" data-skill="82">
+                        <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                        <div class="skill-info">
+                            <h4>Digital Transf.</h4>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--fill: 82%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════ -->
+    <!-- CONTACT SECTION -->
+    <!-- ═══════════════════════════════════ -->
+    <section id="contact" class="contact">
+        <div class="section-label">
+            <span class="label-number">04</span>
+            <span class="label-line"></span>
+            <span class="label-text">Connect</span>
+        </div>
+
+        <div class="contact-layout">
+            <div class="contact-header">
+                <h2 class="contact-title">
+                    Let's create<br>
+                    something <em>extraordinary</em>
+                </h2>
+                <p class="contact-subtitle">
+                    Have a project in mind? I'd love to hear about it.
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <form class="contact-form glass-card" action="https://formspree.io/f/xwvnyvdk" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" name="name" placeholder="John Doe" required>
+                            <div class="input-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" name="email" placeholder="john@email.com" required>
+                            <div class="input-line"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Subject</label>
+                        <input type="text" name="subject" placeholder="Project Inquiry">
+                        <div class="input-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea name="message" rows="4" placeholder="Tell me about your project..."
+                            required></textarea>
+                        <div class="input-line"></div>
+                    </div>
+                    <button type="submit" class="btn-submit">
+                        <span>Send Message</span>
+                        <div class="btn-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="btn-shine"></div>
+                    </button>
+                </form>
+
+                <div class="contact-aside">
+                    <div class="contact-info-card glass-card">
+                        <h4>Get in touch</h4>
+                        <div class="info-row">
+                            <i class="fas fa-envelope"></i>
+                            <span>jihane.benzerkane@example.com</span>
+                        </div>
+                        <div class="info-row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>ENSA Al Hoceima, Morocco</span>
+                        </div>
+                        <div class="info-row">
+                            <i class="fas fa-search"></i>
+                            <span>Actively seeking internship</span>
+                        </div>
+                    </div>
+
+                    <div class="social-card glass-card">
+                        <h4>Follow me</h4>
+                        <div class="social-grid">
+                            <a href="https://github.com/jihanebenzerkane" class="social-item" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/jihane-benzerkane-507ab7257/" class="social-item"
+                                target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://jihanebenzerkane.github.io/" class="social-item" target="_blank">
+                                <i class="fas fa-globe"></i>
+                                <span>Portfolio</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <span class="footer-logo">JB</span>
+                <span class="footer-copy">© 2026 — Jihane Benzerkane</span>
+            </div>
+            <div class="footer-right">
+                <span>Designed & Built with</span>
+                <span class="footer-heart">♥</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
